@@ -100,106 +100,106 @@
 
 #elif defined PS4_4_55
 
-#define kern_off_printf 0x17F30
-#define kern_off_copyin 0x14A890
-#define kern_off_copyout 0x14A7B0
-#define kern_off_copyinstr 0x14AD00
-#define kern_off_kmem_alloc_contig 0x250320
-#define kern_off_kmem_free 0x16EEA0
-#define kern_off_pmap_extract 0x41DBC0
-#define kern_off_pmap_protect 0x420310
-#define kern_off_sched_pin 0x73770
-#define kern_off_sched_unpin 0x73780
-#define kern_off_smp_rendezvous 0xB2BB0
-#define kern_off_smp_no_rendevous_barrier 0xB2970
-#define kern_off_icc_query_nowait 0x808C0
-#define kern_off_kernel_map 0x1B31218
-#define kern_off_sysent 0x102B690
-#define kern_off_kernel_pmap_store 0x21BCC38
-#define kern_off_Starsha_UcodeInfo 0
-#define kern_off_gpu_devid_is_9924 0x496720
-#define kern_off_gc_get_fw_info 0x4A12D0
+#define kern_off_printf						0x17F30
+#define kern_off_copyin						0x14A890
+#define kern_off_copyout					0x14A7B0
+#define kern_off_copyinstr					0x14AD00
+#define kern_off_kmem_alloc_contig			0x250320
+#define kern_off_kmem_free					0x16EEA0
+#define kern_off_pmap_extract				0x41DBC0
+#define kern_off_pmap_protect				0x420310
+#define kern_off_sched_pin					0x73770
+#define kern_off_sched_unpin				0x73780
+#define kern_off_smp_rendezvous				0xB2BB0
+#define kern_off_smp_no_rendevous_barrier	0xB2970
+#define kern_off_icc_query_nowait			0x808C0
+#define kern_off_kernel_map					0x1B31218
+#define kern_off_sysent						0x102B690
+#define kern_off_kernel_pmap_store			0x21BCC38
+#define kern_off_Starsha_UcodeInfo			0
+#define kern_off_gpu_devid_is_9924			0x496720
+#define kern_off_gc_get_fw_info				0x4A12D0
 
-#define kern_off_pml4pml4i 0x21BCC28
-#define kern_off_dmpml4i 0x21BCC2C
-#define kern_off_dmpdpi 0x21BCC30
+#define kern_off_pml4pml4i					0x21BCC28
+#define kern_off_dmpml4i					0x21BCC2C
+#define kern_off_dmpdpi						0x21BCC30
 
 #elif defined PS4_4_74
 
 #define kern_off_printf                     0x17F30
 #define kern_off_copyin                     0x149f20
 #define kern_off_copyout                    0x149E40
-#define kern_off_copyinstr                  0x14A5C0
+#define kern_off_copyinstr                  0x14A390
 #define kern_off_kmem_alloc_contig          0x2527A0
 #define kern_off_kmem_free                  0x16E100
 #define kern_off_pmap_extract               0x41EA30
 #define kern_off_pmap_protect               0x421180
-#define kern_off_sched_pin                  0x072D50
-#define kern_off_sched_unpin                0X072D60
-#define kern_off_smp_rendezvous             0x0B2210
-#define kern_off_smp_no_rendevous_barrier   0x0B1FD0
-#define kern_off_icc_query_nowait           0x07FF00
-
+#define kern_off_sched_pin                  0x72D50
+#define kern_off_sched_unpin                0x72D60
+#define kern_off_smp_rendezvous             0xB2210
+#define kern_off_smp_no_rendevous_barrier   0xB1FD0
+#define kern_off_icc_query_nowait           0x7FF00
 #define kern_off_kernel_map                 0x1B39218
 #define kern_off_sysent                     0x1034790
 #define kern_off_kernel_pmap_store          0x21C5A38
-#define kern_off_Starsha_UcodeInfo 0
+#define kern_off_Starsha_UcodeInfo			0
 #define kern_off_gpu_devid_is_9924          0x4976A0
 #define kern_off_gc_get_fw_info             0x4A2250
+
 #define kern_off_pml4pml4i                  0x21C5A28
 #define kern_off_dmpml4i                    0x21C5A2C
-#define kern_off_dmpdpi                     0x21C5E30
+#define kern_off_dmpdpi                     0x21C5A30
 
-#elif defined PS4_5_01
+#elif defined PS4_5_00 || PS4_5_01
 
-#define kern_off_printf 0x00435C70
-#define kern_off_copyin 0x1EA600
-#define kern_off_copyout 0x1EA520
-#define kern_off_copyinstr 0x1EAA30
-#define kern_off_kmem_alloc_contig 0xF1B80
-#define kern_off_kmem_free 0xFCD40
-#define kern_off_pmap_extract 0x2E02A0
-#define kern_off_pmap_protect 0x2E2D00
-#define kern_off_sched_pin 0x31FB70
-#define kern_off_sched_unpin 0x31FB80
-#define kern_off_smp_rendezvous 0x1B84A0
-#define kern_off_smp_no_rendevous_barrier 0x1B8260
-#define kern_off_icc_query_nowait 0x44020
-#define kern_off_kernel_map 0x1AC60E0
-#define kern_off_sysent 0x107C610
-#define kern_off_kernel_pmap_store 0x22CB4F0
-#define kern_off_Starsha_UcodeInfo 0
-#define kern_off_gpu_devid_is_9924 0x4DDC40
-#define kern_off_gc_get_fw_info 0x4D33D0
+#define kern_off_printf						0x435C70
+#define kern_off_copyin						0x1EA600
+#define kern_off_copyout					0x1EA520
+#define kern_off_copyinstr					0x1EAA30
+#define kern_off_kmem_alloc_contig			0xF1B80
+#define kern_off_kmem_free					0xFCD40
+#define kern_off_pmap_extract				0x2E02A0
+#define kern_off_pmap_protect				0x2E2D00
+#define kern_off_sched_pin					0x31FB70
+#define kern_off_sched_unpin				0x31FB80
+#define kern_off_smp_rendezvous				0x1B84A0
+#define kern_off_smp_no_rendevous_barrier	0x1B8260
+#define kern_off_icc_query_nowait			0x44020
+#define kern_off_kernel_map					0x1AC60E0
+#define kern_off_sysent						0x107C610
+#define kern_off_kernel_pmap_store			0x22CB4F0
+#define kern_off_Starsha_UcodeInfo			0
+#define kern_off_gpu_devid_is_9924			0x4DDC00
+#define kern_off_gc_get_fw_info				0x4D33D0
 
-#define kern_off_pml4pml4i 0x22CB4E0
-#define kern_off_dmpml4i 0x22CB4E4
-#define kern_off_dmpdpi 0x22CB4E8
+#define kern_off_pml4pml4i					0x22CB4E0
+#define kern_off_dmpml4i					0x22CB4E4
+#define kern_off_dmpdpi						0x22CB4E8
 
 #elif defined PS4_5_05
 
-#define kern_off_printf 0x436040
-#define kern_off_copyin 0x1ea710
-#define kern_off_copyout 0x1ea630
-#define kern_off_copyinstr 0x1eab40
-#define kern_off_kmem_alloc_contig 0xF1C90
-#define kern_off_kmem_free 0xfce50
-#define kern_off_pmap_extract 0x2E0570
-#define kern_off_pmap_protect 0x2E3090
-#define kern_off_sched_pin 0x31ff40
-#define kern_off_sched_unpin 0x31ff50
-#define kern_off_smp_rendezvous 0x1B85B0
-#define kern_off_smp_no_rendevous_barrier 0x1B8366
-#define kern_off_icc_query_nowait 0x44020
-#define kern_off_kernel_map 0x1AC60E0
-#define kern_off_sysent 0x0107c610
-#define kern_off_kernel_pmap_store 0x22CB570
-#define kern_off_Starsha_UcodeInfo 0
-#define kern_off_gpu_devid_is_9924 0x4DE010
-#define kern_off_gc_get_fw_info 0x4D37A0
+#define kern_off_printf						0x436040
+#define kern_off_copyin						0x1EA710
+#define kern_off_copyout					0x1EA630
+#define kern_off_copyinstr					0x1EAB40
+#define kern_off_kmem_alloc_contig			0xF1C90
+#define kern_off_kmem_free					0xFCE50
+#define kern_off_pmap_extract				0x2E0570
+#define kern_off_pmap_protect				0x2E3090
+#define kern_off_sched_pin					0x31FF40
+#define kern_off_sched_unpin				0x31FF50
+#define kern_off_smp_rendezvous				0x1B85B0
+#define kern_off_smp_no_rendevous_barrier	0x1B8370
+#define kern_off_icc_query_nowait			0x44020
+#define kern_off_kernel_map					0x1AC60E0
+#define kern_off_sysent						0x107C610
+#define kern_off_kernel_pmap_store			0x22CB570
+#define kern_off_Starsha_UcodeInfo			0
+#define kern_off_gpu_devid_is_9924			0x4DE010
+#define kern_off_gc_get_fw_info				0x4D37A0
 
-#define kern_off_pml4pml4i 0x22CB560 // Pending verification.
-#define kern_off_dmpml4i 0x22CB564
-#define kern_off_dmpdpi 0x22CB568
+#define kern_off_pml4pml4i					0x22CB560
+#define kern_off_dmpml4i					0x22CB564
+#define kern_off_dmpdpi						0x22CB568
 
 #endif
